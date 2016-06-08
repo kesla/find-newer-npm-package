@@ -29,7 +29,7 @@ test('find() ^', t => {
   const input = ['1.0.0'];
   const packages = ['1.0.0', '1.1.0', '1.2.0', '2.0.0'];
   const actual = find(input, packages);
-  const expected = ['1.0.0', '1.2.0', '2.0.0'];
+  const expected = ['1.2.0', '2.0.0'];
   t.deepEqual(actual, expected);
 });
 
