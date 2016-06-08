@@ -1,0 +1,36 @@
+{
+  "name": "find-newer-npm-package",
+  "version": "0.0.0",
+  "description": "Given a npm version & a list of available npm versions, get all newer (based upon semver ^ or ~) packages",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "babel-tape-runner test.js",
+    "build": "rm -rf dist && mkdir -p dist && babel lib --out-dir dist",
+    "watch": "rm -rf dist && mkdir -p dist && babel -w lib --out-dir dist",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kesla/find-newer-npm-package.git"
+  },
+  "author": "David Björklund <david.bjorklund@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kesla/find-newer-npm-package/issues"
+  },
+  "homepage": "https://github.com/kesla/find-newer-npm-package#readme",
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-core": "^6.9.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-tape-runner": "^2.0.1",
+    "semistandard": "^8.0.0",
+    "snazzy": "^4.0.0",
+    "tapava": "^2.1.4"
+  },
+  "dependencies": {
+    "array-from": "^2.1.1",
+    "es6-set": "^0.1.4",
+    "semver": "^5.1.0"
+  }
+}
