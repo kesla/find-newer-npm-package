@@ -1,6 +1,6 @@
 {
   "name": "find-newer-npm-package",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Given a npm version & a list of available npm versions, get all newer (based upon semver ^ or ~) packages",
   "main": "dist/index.js",
   "scripts": {
