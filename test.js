@@ -48,3 +48,11 @@ test('find() multiple input versions', t => {
   const expected = ['1.0.2', '1.2.0', '2.0.1'];
   t.deepEqual(actual, expected);
 });
+
+test('bad semver vesion', t => {
+  const input = ['1'];
+  const packages = ['0.0.1alpha1', '1.0.1'];
+  const actual = find(input, packages);
+  const expected = ['1.0.1'];
+  t.deepEqual(actual, expected);
+});
